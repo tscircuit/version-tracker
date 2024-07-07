@@ -63,9 +63,15 @@ async function generateMermaidChart(
 
 async function main() {
   const repoUrls = [
-    "https://github.com/facebook/react",
-    "https://github.com/vuejs/vue",
-    "https://github.com/angular/angular",
+    "https://github.com/tscircuit/tscircuit",
+    "https://github.com/tscircuit/cli",
+    "https://github.com/tscircuit/react-fiber",
+    "https://github.com/tscircuit/builder",
+    "https://github.com/tscircuit/schematic-viewer",
+    "https://github.com/tscircuit/pcb-viewer",
+    "https://github.com/tscircuit/3d-viewer",
+    "https://github.com/tscircuit/soup",
+    "https://github.com/tscircuit/props",
   ]
 
   const repoData = []
@@ -81,8 +87,8 @@ async function main() {
   }
 
   const mermaidChart = await generateMermaidChart(repoData)
-  await fs.writeFile("repo_versions_chart.md", mermaidChart)
-  console.log("Chart generated and saved to repo_versions_chart.md")
+  await fs.writeFile("README.md", mermaidChart)
+  console.log("Chart generated and saved to README.md")
 }
 
 main().catch(console.error)
