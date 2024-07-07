@@ -1,9 +1,7 @@
 import { Octokit } from "@octokit/rest"
 import * as fs from "fs/promises"
 
-// You'll need to replace this with your own GitHub personal access token
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN || ""
-
 const octokit = new Octokit({ auth: GITHUB_TOKEN })
 
 async function getRepoInfo(
@@ -26,14 +24,23 @@ async function getRepoInfo(
     const content = Buffer.from(packageJson.content, "base64").toString()
     const { version } = JSON.parse(content)
 
-    // Get last commit info
+    // Get commits from the past week
+    const oneWeekAgo = new Date()
+    oneWeekAgo.setDate(oneWeekAgo.getDate() - 7)
+
     const { data: commits } = await octokit.repos.listCommits({
       owner,
       repo,
-      per_page: 1,
+      since: oneWeekAgo.toISOString(),
+      per_page: 100, // Increase this if you expect more than 100 commits in a week
     })
 
-    // Use the commit timestamp instead of the author date
+    if (commits.length === 0) {
+      console.log(`No commits in the past week for ${owner}/${repo}`)
+      return null
+    }
+
+    // Use the most recent commit timestamp
     const lastCommitTime = commits[0].commit.committer?.date || "Unknown"
 
     return { version, lastCommitTime }
@@ -47,7 +54,7 @@ async function generateMermaidChart(
   repoData: { repo: string; version: string; lastCommitTime: string }[]
 ): string {
   const mermaidHeader =
-    "```mermaid\ngantt\n  dateFormat  YYYY-MM-DD HH:mm:ss\n  title Repository Versions and Last Commit Times\n  axisFormat %Y-%m-%d %H:%M\n\n"
+    "```mermaid\ngantt\n  dateFormat  YYYY-MM-DD HH:mm:ss\n  title Repository Versions and Last Commit Times (Past Week)\n  axisFormat %Y-%m-%d %H:%M\n\n"
 
   const chartContent = repoData
     .map(({ repo, version, lastCommitTime }) => {
