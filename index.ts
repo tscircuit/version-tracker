@@ -2,7 +2,7 @@ import { Octokit } from "@octokit/rest"
 import * as fs from "fs/promises"
 
 // You'll need to replace this with your own GitHub personal access token
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN || ""
 
 const octokit = new Octokit({ auth: GITHUB_TOKEN })
 
