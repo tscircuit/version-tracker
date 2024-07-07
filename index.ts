@@ -26,14 +26,15 @@ async function getRepoInfo(
     const content = Buffer.from(packageJson.content, "base64").toString()
     const { version } = JSON.parse(content)
 
-    // Get last commit time
+    // Get last commit info
     const { data: commits } = await octokit.repos.listCommits({
       owner,
       repo,
       per_page: 1,
     })
 
-    const lastCommitTime = commits[0].commit.author?.date || "Unknown"
+    // Use the commit timestamp instead of the author date
+    const lastCommitTime = commits[0].commit.committer?.date || "Unknown"
 
     return { version, lastCommitTime }
   } catch (error) {
@@ -46,15 +47,13 @@ async function generateMermaidChart(
   repoData: { repo: string; version: string; lastCommitTime: string }[]
 ): string {
   const mermaidHeader =
-    "```mermaid\ngantt\n  dateFormat  YYYY-MM-DD\n  title Repository Versions and Last Commit Times\n\n"
+    "```mermaid\ngantt\n  dateFormat  YYYY-MM-DD HH:mm:ss\n  title Repository Versions and Last Commit Times\n  axisFormat %Y-%m-%d %H:%M\n\n"
 
   const chartContent = repoData
     .map(({ repo, version, lastCommitTime }) => {
       const date = new Date(lastCommitTime)
-      const formattedDate = `${date.getFullYear()}-${String(
-        date.getMonth() + 1
-      ).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`
-      return `  ${repo} v${version} : milestone, ${formattedDate}, 1d`
+      const formattedDate = date.toISOString().replace("T", " ").slice(0, 19)
+      return `  ${repo} v${version} : milestone, ${formattedDate}, 1s`
     })
     .join("\n")
 

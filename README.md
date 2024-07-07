@@ -1,15 +1,16 @@
 ```mermaid
 gantt
-  dateFormat  YYYY-MM-DD
+  dateFormat  YYYY-MM-DD HH:mm:ss
   title Repository Versions and Last Commit Times
+  axisFormat %Y-%m-%d %H:%M
 
-  tscircuit/tscircuit v0.0.214 : milestone, 2024-07-07, 1d
-  tscircuit/cli v0.0.122 : milestone, 2024-07-07, 1d
-  tscircuit/react-fiber v1.1.29 : milestone, 2024-07-07, 1d
-  tscircuit/builder v1.5.136 : milestone, 2024-07-07, 1d
-  tscircuit/schematic-viewer v1.2.14 : milestone, 2024-06-20, 1d
-  tscircuit/pcb-viewer v1.4.1 : milestone, 2024-07-04, 1d
-  tscircuit/3d-viewer v0.0.7 : milestone, 2024-07-07, 1d
-  tscircuit/soup v0.0.39 : milestone, 2024-07-03, 1d
-  tscircuit/props v0.0.17 : milestone, 2024-07-01, 1d
+  tscircuit/tscircuit v0.0.214 : milestone, 2024-07-07 16:23:38, 1s
+  tscircuit/cli v0.0.122 : milestone, 2024-07-07 10:48:24, 1s
+  tscircuit/react-fiber v1.1.29 : milestone, 2024-07-07 17:23:26, 1s
+  tscircuit/builder v1.5.136 : milestone, 2024-07-07 07:13:19, 1s
+  tscircuit/schematic-viewer v1.2.14 : milestone, 2024-06-21 00:20:24, 1s
+  tscircuit/pcb-viewer v1.4.1 : milestone, 2024-07-04 21:31:51, 1s
+  tscircuit/3d-viewer v0.0.7 : milestone, 2024-07-07 07:13:23, 1s
+  tscircuit/soup v0.0.39 : milestone, 2024-07-03 22:27:43, 1s
+  tscircuit/props v0.0.17 : milestone, 2024-07-01 21:50:17, 1s
 ```
