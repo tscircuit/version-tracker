@@ -4,7 +4,7 @@ gantt
   title Repository Versions and Last Commit Times (Past Week)
   axisFormat %Y-%m-%d %H:%M
 
-  tscircuit/tscircuit v0.0.236 : milestone, 2024-07-23 04:55:43, 1s
+  tscircuit/tscircuit v0.0.237 : milestone, 2024-07-24 00:04:32, 1s
   tscircuit/cli v0.0.143 : milestone, 2024-07-23 19:55:41, 1s
   tscircuit/builder v1.5.149 : milestone, 2024-07-23 21:01:43, 1s
   tscircuit/schematic-viewer v1.2.14 : milestone, 2024-07-23 03:50:56, 1s
