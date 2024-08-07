@@ -7,7 +7,7 @@ gantt
   tscircuit/tscircuit v0.0.257 : milestone, 2024-08-05 23:16:17, 1s
   tscircuit/cli v0.0.144 : milestone, 2024-08-05 20:01:47, 1s
   tscircuit/react-fiber v1.2.0 : milestone, 2024-08-01 04:16:00, 1s
-  tscircuit/builder v1.9.1 : milestone, 2024-08-05 20:01:47, 1s
+  tscircuit/builder v1.9.2 : milestone, 2024-08-07 07:21:49, 1s
   tscircuit/3d-viewer v0.0.14 : milestone, 2024-08-06 14:28:03, 1s
   tscircuit/soup v0.0.47 : milestone, 2024-08-01 04:19:38, 1s
 ```
