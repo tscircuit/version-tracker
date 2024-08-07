@@ -4,7 +4,7 @@ gantt
   title Repository Versions and Last Commit Times (Past Week)
   axisFormat %Y-%m-%d %H:%M
 
-  tscircuit/tscircuit v0.0.257 : milestone, 2024-08-05 23:16:17, 1s
+  tscircuit/tscircuit v0.0.258 : milestone, 2024-08-07 12:06:34, 1s
   tscircuit/cli v0.0.144 : milestone, 2024-08-05 20:01:47, 1s
   tscircuit/react-fiber v1.2.0 : milestone, 2024-08-01 04:16:00, 1s
   tscircuit/builder v1.9.2 : milestone, 2024-08-07 07:21:49, 1s
