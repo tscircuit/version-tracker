@@ -6,8 +6,8 @@ gantt
 
   tscircuit/tscircuit v0.0.266 : milestone, 2024-08-13 23:37:39, 1s
   tscircuit/cli v0.0.163 : milestone, 2024-08-10 14:15:28, 1s
-  tscircuit/builder v1.10.0 : milestone, 2024-08-13 18:36:04, 1s
-  tscircuit/pcb-viewer v1.4.6 : milestone, 2024-08-12 20:14:33, 1s
+  tscircuit/builder v1.11.0 : milestone, 2024-08-15 20:38:45, 1s
+  tscircuit/pcb-viewer v1.5.0 : milestone, 2024-08-15 20:55:08, 1s
   tscircuit/soup v0.0.50 : milestone, 2024-08-15 19:36:27, 1s
-  tscircuit/props v0.0.28 : milestone, 2024-08-15 20:10:43, 1s
+  tscircuit/props v0.0.33 : milestone, 2024-08-15 20:18:33, 1s
 ```
