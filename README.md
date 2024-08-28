@@ -9,5 +9,5 @@ gantt
   tscircuit/builder v1.11.4 : milestone, 2024-08-27 21:56:45, 1s
   tscircuit/pcb-viewer v1.8.0 : milestone, 2024-08-27 19:53:15, 1s
   tscircuit/soup v0.0.57 : milestone, 2024-08-27 21:37:32, 1s
-  tscircuit/props v0.0.41 : milestone, 2024-08-27 21:35:18, 1s
+  tscircuit/props v0.0.43 : milestone, 2024-08-27 23:21:38, 1s
 ```
