@@ -10,5 +10,4 @@ gantt
   tscircuit/pcb-viewer v1.10.1 : milestone, 2024-09-12 18:10:30, 1s
   tscircuit/3d-viewer v0.0.14 : milestone, 2024-09-06 23:07:26, 1s
   tscircuit/soup v0.0.68 : milestone, 2024-09-06 22:51:33, 1s
-  tscircuit/props v0.0.62 : milestone, 2024-09-05 23:38:33, 1s
 ```
