@@ -5,7 +5,7 @@ gantt
   axisFormat %Y-%m-%d %H:%M
 
   tscircuit/tscircuit v0.0.341 : milestone, 2024-09-28 19:18:49, 1s
-  tscircuit/cli v0.0.230 : milestone, 2024-09-28 19:24:20, 1s
+  tscircuit/cli v0.0.231 : milestone, 2024-09-28 21:20:14, 1s
   tscircuit/schematic-viewer v1.3.0 : milestone, 2024-09-26 15:39:47, 1s
   tscircuit/pcb-viewer v1.10.7 : milestone, 2024-09-28 15:06:22, 1s
   tscircuit/3d-viewer v0.0.26 : milestone, 2024-09-23 22:06:33, 1s
