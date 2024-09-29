@@ -7,7 +7,7 @@ gantt
   tscircuit/tscircuit v0.0.341 : milestone, 2024-09-28 19:18:49, 1s
   tscircuit/cli v0.0.231 : milestone, 2024-09-28 21:20:14, 1s
   tscircuit/schematic-viewer v1.3.0 : milestone, 2024-09-26 15:39:47, 1s
-  tscircuit/pcb-viewer v1.10.7 : milestone, 2024-09-28 15:06:22, 1s
+  tscircuit/pcb-viewer v1.10.8 : milestone, 2024-09-29 06:04:46, 1s
   tscircuit/3d-viewer v0.0.26 : milestone, 2024-09-23 22:06:33, 1s
   tscircuit/soup v0.0.82 : milestone, 2024-09-25 02:48:20, 1s
   tscircuit/props v0.0.66 : milestone, 2024-09-22 17:38:44, 1s
